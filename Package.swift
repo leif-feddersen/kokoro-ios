@@ -9,9 +9,9 @@ let package = Package(
     .iOS(.v18), .macOS(.v15)
   ],
   products: [
+    // Automatic linkage keeps shared MLX and Misaki targets in one app image.
     .library(
       name: "KokoroSwift",
-      type: .dynamic,
       targets: ["KokoroSwift"]
     ),
   ],
